@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nusantara Cell-Intel Pro</title>
+    <title>Nusantara Cell-Intel Pro | Professional Cellular Intelligence</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
     <style>
@@ -12,13 +12,32 @@
             margin: 0;
             padding: 0;
             background-color: black;
+            color: #e5e7eb;
         }
         .mono { font-family: 'JetBrains Mono', monospace; }
         ::-webkit-scrollbar { width: 6px; }
-        ::-webkit-scrollbar-track { background: #111; }
-        ::-webkit-scrollbar-thumb { background: #333; border-radius: 10px; }
-        ::-webkit-scrollbar-thumb:hover { background: #444; }
+        ::-webkit-scrollbar-track { background: #000; }
+        ::-webkit-scrollbar-thumb { background: #2563eb; border-radius: 10px; }
         #root { min-height: 100vh; }
+        
+        @keyframes scan {
+            0% { transform: translateY(-100%); opacity: 0; }
+            50% { opacity: 0.5; }
+            100% { transform: translateY(100%); opacity: 0; }
+        }
+        .scanner-line {
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #3b82f6, transparent);
+            animation: scan 2s linear infinite;
+        }
+        .glow-text {
+            text-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+        }
+        .signal-line {
+            background: linear-gradient(to right, #3b82f6, #10b981);
+            height: 2px;
+            box-shadow: 0 0 15px #3b82f6;
+        }
     </style>
 <script type="importmap">
 {
@@ -33,9 +52,8 @@
 }
 </script>
 </head>
-<body class="bg-black text-gray-100 overflow-x-hidden">
+<body class="bg-black">
     <div id="root"></div>
-    <!-- Vite akan secara otomatis mengganti path ini saat proses build -->
     <script type="module" src="/index.tsx"></script>
 </body>
 </html>
