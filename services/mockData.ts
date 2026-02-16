@@ -1,6 +1,6 @@
 
-import { BTSInfo, CellIntelligence } from '../types.ts';
-import { PROVINCES } from '../constants.tsx';
+import { BTSInfo, CellIntelligence } from '../types';
+import { PROVINCES } from '../constants';
 
 export const generateRandomBTS = (count: number): BTSInfo[] => {
   const operators = ['Telkomsel', 'Indosat Ooredoo', 'XL Axiata', 'Smartfren', 'Three'];
