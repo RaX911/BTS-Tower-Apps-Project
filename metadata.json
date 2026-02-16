@@ -1,0 +1,7 @@
+{
+  "name": "Nusantara Cell-Intel Pro",
+  "description": "Professional Grade Indonesia Cellular Infrastructure & Intelligence Dashboard. Features BTS mapping, MSISDN lookup, and advanced API management for cellular data across all 38 provinces.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
