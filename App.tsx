@@ -1,8 +1,8 @@
 
 import React, { useState, useEffect } from 'react';
-import { User, UserRole, SubscriptionPlan, BTSInfo, CellIntelligence } from './types';
-import { CONTACT_INFO, PRICING_PLANS, PROVINCES } from './constants';
-import { generateRandomBTS, intelLookup } from './services/mockData';
+import { User, UserRole, SubscriptionPlan, BTSInfo, CellIntelligence } from './types.ts';
+import { CONTACT_INFO, PRICING_PLANS, PROVINCES } from './constants.tsx';
+import { generateRandomBTS, intelLookup } from './services/mockData.ts';
 import { 
   Activity, 
   Database, 
